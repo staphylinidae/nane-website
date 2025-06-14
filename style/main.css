@@ -8,20 +8,48 @@
 	--content: #1c5200;
 }
 
-.fredoka-<uniquifier> {
-  font-family: "Fredoka", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
+.be-vietnam-pro-regular {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-  "wdth" 90;
 }
 
+.be-vietnam-pro-medium {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.be-vietnam-pro-bold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.be-vietnam-pro-regular-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.be-vietnam-pro-medium-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.be-vietnam-pro-bold-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 body {
-	font-family: 'Fredoka', sans-serif;
+	font-family: 'Be Vietnam Pro', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
-	line-height: 1.3em;
+	line-height: 1.5em;
 	margin: 0;
 	background-color: #2d6a02;
 	color: #e6eff4;
@@ -119,61 +147,6 @@ you can add them directly to the <div id="header"></div> element! */
 	color: #e6eff4;
 	padding: 15px;
 }
-
-#topnav ul{
-	justify-content: space-evenly;
-	list-style-type: none;
-    display: flex;
-	padding: 0px;
-    margin: 0;
-	background-color: #0a130e;
-}
-
-#topnav h1{
-	line-height: .6em;
-}
-
-#topnav ul li a {
-    padding: 6px 0 0 0;
-    display: block;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    border-right: 1px solid #000;
-    width: 193.2px;
-    height: 40px;
-    background: #0a130e;
-    color: #e6eff4;
-    font-family: "Lastik", serif;
-    text-align: center;
-    text-decoration: none;
-	-webkit-text-stroke-width: .02em;
-	-webkit-text-stroke-color: black;
-	line-height: 1.2em;
-	letter-spacing: -.02em;
-	font-size: 150%;
-}
-
-#topnav ul li a:hover {
-    background: #e6eff4;
-    color: #0a130e;
-}
-
-	.text {
-		 opacity: 0;
-		 position: absolute;
-		 top: 50%;
-		 left: 50%;
-		 transform: translate(-50%, -50%);
-		 font-size: calc(1em + 1.75vw);
-		 color: #FFF;
-		 filter: drop-shadow(1px 1px 0 black)
-			drop-shadow(-1px 1px 0 black) 
-			drop-shadow(1px -1px 0 black) 
-			drop-shadow(-1px -1px 0 black);
-		 text-transform: uppercase;
-		 z-index: 99;
-	}
-
 	.mainpage {
 		 width: 100%;
 		 height: 300px;
@@ -195,12 +168,6 @@ you can add them directly to the <div id="header"></div> element! */
 
 audio {width: 100%; display: block; padding: 10px}
 
-a {	text-decoration: underline;     background: none;
-    color: #e6eff4;}
-
-a:hover { text-decoration: underline;     background: #e6eff4;
-    color: #0a130e;}
-
 ol {
 	padding-left: 0px;
 	margin-left: 0px;
@@ -219,24 +186,6 @@ ul {
 	display: flex;
 }
 
-/* this colors BOTH sidebars
-if you want to style them separately,
-create styles for #leftSidebar and #rightSidebar */
-aside {
-	background-color: #1c5200;
-	width: 200px;
-	padding: 10px;
-	font-size: smaller;
-	/* this makes the sidebar text slightly smaller */
-	border-style: solid;
-	border-width: 1px;
-	border-color: #0a130e;
-	border-top: 0px;
-}
-
-aside.crochet{
-	background-color: #024466;
-}
 
 /* this is the color of the main content area,
 between the sidebars! */
@@ -279,7 +228,7 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: 'Lastik', monospace;
+	font-family: "Comic Sans MS", monospace;
 	font-weight: normal;
 	text-align: center;
 	color: #e6eff4;
@@ -345,16 +294,6 @@ marquee {
 	padding-right: 10px;
 	margin-top: 10px;
 	border-radius: 5px;
-}
-
-.box a {
-	background: #0a130e;
-    color: #e6eff4;
-}
-
-.box a:hover {
-	background: #e6eff4;
-    color: #0a130e;
 }
 
 #dev-log {
@@ -427,16 +366,14 @@ marquee {
 }
 
 
-.button {
-  background-color: #04AA6D; /* Green */
-  border: none;
-  color: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+button {
+  /* style attributes go here */
+  margin: 5px;
+}
 
+button a{
+	color: black;
+	background-color: #fff;
 }
 
 .image-container {
@@ -601,10 +538,6 @@ and then subtrack it by 100. use this new number as the
 @media only screen and (max-width: 900px) {
 	#flex {
 		flex-wrap: wrap;
-	}
-
-	aside {
-		width: 100%;
 	}
 
 	/* the order of the items is adjusted here for responsiveness!
